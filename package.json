@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@neondatabase/serverless": "^0.10.4",
     "@tailwindcss/postcss": "^4.0.9",
     "next": "^15.2.1",
     "react": "^19.0.0",

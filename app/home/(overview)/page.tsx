@@ -8,8 +8,6 @@ export default function Page() {
 
   <main>
     <SectionOne />
-    <SectionTwo />
-    <SectionThree />
   </main>
 
   </>
