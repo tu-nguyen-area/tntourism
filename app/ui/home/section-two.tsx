@@ -14,8 +14,12 @@ export default async function SectionTwo({ id }: { id: string }) {
           key={tourism.tourism_id}
           title={tourism.title}
           name={tourism.name}
-          img={tourism.img}
-          content={tourism.content}
+          top_img={tourism.top_img}
+          mid_img={tourism.mid_img}
+          bottom_img={tourism.bottom_img}
+          top_content={tourism.top_content}
+          mid_content={tourism.mid_content}
+          bottom_content={tourism.bottom_content}
         />
       );
     })}

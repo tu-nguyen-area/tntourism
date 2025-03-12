@@ -4,13 +4,21 @@ import Image from 'next/image';
 export function EachTourism({
   title,
   name,
-  img,
-  content,
+  top_img,
+  mid_img,
+  bottom_img,
+  top_content,
+  mid_content,
+  bottom_content,
 }: {
   title: string;
   name: string;
-  img: string;
-  content: string;
+  top_img: string;
+  mid_img: string;
+  bottom_img: string;
+  top_content: string;
+  mid_content: string;
+  bottom_content: string;
 }) {
   return (
   <>
@@ -22,33 +30,33 @@ export function EachTourism({
       <div className="md:p-8 flex justify-center">
         <Image
           className="w-full md:w-3/4 rounded-lg"
-          src={`/${img}`}
+          src={`/${top_img}`}
           width={3000}
           height={2}
           alt="image"
         />
       </div>
-      <p className="whitespace-pre-line md:whitespace-pre-wrap">{content}</p>
+      <p className="whitespace-pre-line md:whitespace-pre-wrap">{top_content}</p>
       <div className="md:p-8 flex justify-center">
         <Image
           className="w-full md:w-3/4 rounded-lg"
-          src={`/${img}`}
+          src={`/${mid_img}`}
           width={3000}
           height={2}
           alt="image"
         />
       </div>
-      <p className="whitespace-pre-line md:whitespace-pre-wrap">{content}</p>
+      <p className="whitespace-pre-line md:whitespace-pre-wrap">{mid_content}</p>
       <div className="md:p-8 flex justify-center">
         <Image
           className="w-full md:w-3/4 rounded-lg"
-          src={`/${img}`}
+          src={`/${bottom_img}`}
           width={3000}
           height={2}
           alt="image"
         />
       </div>
-      <p className="whitespace-pre-line md:whitespace-pre-wrap">{content}</p>
+      <p className="whitespace-pre-line md:whitespace-pre-wrap">{bottom_content}</p>
     </div>
   </section>
 

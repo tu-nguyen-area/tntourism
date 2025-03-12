@@ -12,10 +12,10 @@ export default async function SectionOne() {
       return (
         <ListTourism
           key={tourism.tourism_id}
-          link={tourism.tourism_id}
+          link={`/home/${tourism.tourism_id}`}
           title={tourism.title}
           author={tourism.name}
-          content={tourism.content}
+          top_content={tourism.top_content}
         />
       );
     })}

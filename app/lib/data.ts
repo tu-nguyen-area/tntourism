@@ -25,7 +25,7 @@ export async function fetchEachTourism(tourism_id: string) {
     const data = await sql`
       SELECT * FROM "Tourism" JOIN "User"
       ON "Tourism"."author_id" = "User"."id"
-      WHERE "Tourism"."tourism_id" = ${tourism_id};
+      WHERE "Tourism"."tourism_id" = ${`${tourism_id}`};
     `;
 
     return data;

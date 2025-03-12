@@ -5,8 +5,9 @@ import Link from 'next/link';
 
 const links = [
   { name: 'Home', href: '/' },
-  { name: 'Support', href: '/' },
-  { name: 'About', href: '/' },
+  { name: 'Destination', href: '/home' },
+  { name: 'Food', href: '/food' },
+  { name: 'About', href: '/about', },
 ];
 
 export default function BarNav() {
