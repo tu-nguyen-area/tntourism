@@ -16,8 +16,10 @@ export default async function SignoutTourism() {
 
   <section>
     <Form action={handleSignOut}>
-      <label className="mr-3">{session?.user?.email}</label>
-      <button className="mt-6 bg-black dark:bg-white rounded-lg text-white dark:text-black p-2 w-36 h-10 hover:bg-gradient-to-r hover:from-cyan-500 hover:via-indigo-500 hover:to-fuchsia-500 hover:text-white" type="submit">Sign Out</button>
+      <label className="mr-3 hidden md:inline-block">{session?.user?.email}</label>
+      <button className="mt-6 bg-black dark:bg-white rounded-lg text-white dark:text-black p-2 w-full md:w-36 h-10 hover:bg-gradient-to-r hover:from-cyan-500 hover:via-indigo-500 hover:to-fuchsia-500 hover:text-white" type="submit">
+        <label className="mr-6 md:hidden inline-block">{session?.user?.email}</label>Sign Out
+      </button>
     </Form>
   </section>
 

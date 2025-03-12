@@ -43,7 +43,7 @@ export function AuthTourism({ action, children, defaultEmail, isSuccessful, url,
       <div className="px-6">
         <Submit isSuccessful={isSuccessful}/>
         <Link href="/" className="md:ml-16">
-          <button className="my-8 bg-black dark:bg-white rounded-lg text-white dark:text-black w-full md:w-48 h-10 hover:bg-gradient-to-r hover:from-cyan-500 hover:via-indigo-500 hover:to-fuchsia-500 hover:text-white">Cancel</button>
+          <button className="bg-black dark:bg-white rounded-lg text-white dark:text-black w-full md:w-48 h-10 hover:bg-gradient-to-r hover:from-cyan-500 hover:via-indigo-500 hover:to-fuchsia-500 hover:text-white">Cancel</button>
         </Link>
       </div>
       <Link href={`${url}`}><h1 className="text-center m-6">{content}</h1></Link>
