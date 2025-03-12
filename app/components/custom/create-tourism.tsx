@@ -32,17 +32,20 @@ export default function CreateTourism({ author_id }: { author_id: string }) {
         <input name="author_id" type="hidden" defaultValue={`${author_id}`}></input>
         <input name="name" type="hidden" defaultValue=""></input>
         <input name="published" type="hidden" defaultValue=""></input>
+        <input name="top_img" type="hidden" defaultValue=""></input>
+        <input name="mid_img" type="hidden" defaultValue=""></input>
+        <input name="bottom_img" type="hidden" defaultValue=""></input>
       </div>
       <div className="my-6">
-        <label className="text-xl bg-gradient-to-r from-cyan-500 to-fuchsia-500 bg-clip-text font-bold text-transparent">Content</label>
+        <label className="text-xl bg-gradient-to-r from-cyan-500 to-fuchsia-500 bg-clip-text font-bold text-transparent">Top Content</label>
         <textarea name="top_content" placeholder="Content..." className="rounded-lg w-full h-64 md:h-96 border-2 p-2" required></textarea>
       </div>
       <div className="my-6">
-        <label className="text-xl bg-gradient-to-r from-cyan-500 to-fuchsia-500 bg-clip-text font-bold text-transparent">Content</label>
+        <label className="text-xl bg-gradient-to-r from-cyan-500 to-fuchsia-500 bg-clip-text font-bold text-transparent">Mid Content</label>
         <textarea name="mid_content" placeholder="Content..." className="rounded-lg w-full h-64 md:h-96 border-2 p-2" required></textarea>
       </div>
       <div className="my-6">
-        <label className="text-xl bg-gradient-to-r from-cyan-500 to-fuchsia-500 bg-clip-text font-bold text-transparent">Content</label>
+        <label className="text-xl bg-gradient-to-r from-cyan-500 to-fuchsia-500 bg-clip-text font-bold text-transparent">Bottom Content</label>
         <textarea name="bottom_content" placeholder="Content..." className="rounded-lg w-full h-64 md:h-96 border-2 p-2" required></textarea>
       </div>
       <div className="grid gap-6 md:flex md:justify-between my-6 md:my-12">

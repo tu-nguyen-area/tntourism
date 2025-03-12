@@ -1,5 +1,5 @@
 import SectionTwo from '@/app/ui/dashboard/section-two';
-import { DeleteTourism } from '@/app/ui/dashboard/buttons';
+import { DeleteTourism, EditTourism } from '@/app/ui/dashboard/buttons';
 import Link from 'next/link';
 
 export default async function Page(props: { params: Promise<{ id: string }> }) {
@@ -20,6 +20,7 @@ export default async function Page(props: { params: Promise<{ id: string }> }) {
         </button>
       </Link>
       <DeleteTourism id={id} />
+      <EditTourism id={id} />
     </div>
   </main>
 

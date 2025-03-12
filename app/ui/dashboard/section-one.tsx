@@ -1,8 +1,8 @@
 import { ListTourism } from '@/app/components/custom/list-tourism';
-import { fetchTourism } from '@/app/lib/data';
+import { fetchDashboardTourism } from '@/app/lib/data';
 
 export default async function SectionOne() {
-  const listTourism = await fetchTourism();
+  const listTourism = await fetchDashboardTourism();
 
   return (
   <>
