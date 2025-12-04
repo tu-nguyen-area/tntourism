@@ -10,7 +10,7 @@ function Submit({ isSuccessful }: { isSuccessful: boolean }) {
   return (
     <button className="my-8 md:mr-16 bg-black dark:bg-white rounded-lg text-white dark:text-black w-full
         md:w-48 h-10 hover:bg-gradient-to-r hover:from-cyan-500 hover:via-indigo-500 hover:to-fuchsia-500
-        hover:text-white" type="submit" disabled={pending|| isSuccessful}>
+        hover:text-white" type="submit" disabled={ pending || isSuccessful }>
       {pending ? "Confirming..." : "Confirm"}
     </button>
   );
@@ -33,22 +33,40 @@ export function AuthTourism({ action, children, defaultEmail, isSuccessful, url,
         {children}
       <div className="p-6 w-dvw md:w-auto flex flex-col gap-3">
 
-        <label htmlFor="email" className="text-xl md:text-2xl font-bold bg-gradient-to-r from-cyan-500 to-fuchsia-500 bg-clip-text text-transparent w-fit">Email</label>
-        <input id="email" name="email" type="email" className="rounded-lg p-3 bg-white dark:bg-black" defaultValue={`${defaultEmail}`} placeholder="user@email.com" autoComplete="email" required></input>
+        <label htmlFor="email" className="text-xl md:text-2xl font-bold bg-gradient-to-r from-cyan-500 to-fuchsia-500 bg-clip-text text-transparent w-fit"
+        >
+          Email
+        </label>
+        <input
+          id="email"
+          name="email"
+          type="email"
+          className="rounded-lg p-3 bg-white dark:bg-black"
+          defaultValue={`${defaultEmail}`}
+          placeholder="user@email.com"
+          autoComplete="email"
+          required
+        >
+        </input>
 
-        <label htmlFor="password" className="text-xl md:text-2xl font-bold bg-gradient-to-r from-cyan-500 to-fuchsia-500 bg-clip-text text-transparent w-fit">Password</label>
+        <label htmlFor="password"
+          className="text-xl md:text-2xl font-bold bg-gradient-to-r from-cyan-500 to-fuchsia-500 bg-clip-text text-transparent w-fit"
+        >
+          Password
+        </label>
         <input id="password" name="password" type="password" className="rounded-lg p-3 bg-white dark:bg-black" placeholder="password" required></input>
-
       </div>
       <div className="px-6">
         <Submit isSuccessful={isSuccessful}/>
         <Link href="/" className="md:ml-16">
-          <button className="bg-black dark:bg-white rounded-lg text-white dark:text-black w-full md:w-48 h-10 hover:bg-gradient-to-r hover:from-cyan-500 hover:via-indigo-500 hover:to-fuchsia-500 hover:text-white">Cancel</button>
+          <button className="bg-black dark:bg-white rounded-lg text-white dark:text-black w-full md:w-48 h-10
+            hover:bg-gradient-to-r hover:from-cyan-500 hover:via-indigo-500 hover:to-fuchsia-500 hover:text-white"
+          >
+            Cancel
+          </button>
         </Link>
       </div>
       <Link href={`${url}`}><h1 className="text-center m-6">{content}</h1></Link>
-      
-      
       </div>
     </Form>
   </section>

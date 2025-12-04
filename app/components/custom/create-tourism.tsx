@@ -8,8 +8,9 @@ import Link from 'next/link';
 function Submit() {
   const { pending } = useFormStatus();
   return (
-    <button className="bg-black dark:bg-white rounded-lg text-white dark:text-black p-2 w-full md:w-36 h-10 hover:bg-gradient-to-r hover:from-cyan-500 hover:via-indigo-500
-        hover:to-fuchsia-500 hover:text-white" type="submit" disabled={pending}>
+    <button className="bg-black dark:bg-white rounded-lg text-white dark:text-black p-2 w-full md:w-36 h-10
+      hover:bg-gradient-to-r hover:from-cyan-500 hover:via-indigo-500 hover:to-fuchsia-500 hover:text-white" type="submit" disabled={pending}
+    >
       {pending ? "Confirming..." : "Confirm"}
     </button>
   );
@@ -51,7 +52,10 @@ export default function CreateTourism({ author_id }: { author_id: string }) {
       <div className="grid gap-6 md:flex md:justify-between my-6 md:my-12">
         <Link href="/dashboard">
           <button className="bg-black dark:bg-white rounded-lg text-white dark:text-black p-2 w-full md:w-36 h-10 hover:bg-gradient-to-r hover:from-cyan-500 hover:via-indigo-500
-            hover:to-fuchsia-500 hover:text-white">Cancel</button>
+            hover:to-fuchsia-500 hover:text-white"
+          >
+            Cancel
+          </button>
         </Link>
         <Submit />
       </div>
